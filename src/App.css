@@ -1,38 +1,142 @@
-.App {
+*{margin: 0; padding: 0; list-style: none;}
+.screen_out{display: none;}
+
+body{
+  font-family: "Noto Sans","NotoSans_Regular","Malgun Gothic","Apple SD Gothic Neo",sans-serif;
+}
+
+.App{
+  position: relative;
+}
+
+.header-navbar .container h1{
+  background:url(./assets/img/logo.png) no-repeat 0 0;
+  background-size: 165px auto;
+}  
+.header-navbar .container h1>a.navbar-brand{
+  display: block;
+  width: 165px;
+  height: 35px;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
+.header-navbar .navbar-nav>a.nav-link{
+  display: inline-block;
+  height: 76px;
+  box-sizing: border-box;
+  color: #1e1e1e;
+  line-height: 76px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.swiper:nth-of-type(1){  
+  width: 100%;
+  height: 90%;  
+}
+
+.swiper-slide-active:nth-of-type(1){  
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: flex !important;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+
+.visualWrap h2{
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 1.41;
+  letter-spacing: -2px;
+  text-indent: -2px;
+}
+.visualWrap p{
+  padding-left: 624px;
+  font-size: 18px;
+  line-height: 1.56;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card{
+  border: none !important
+}
+
+ .card:hover{
+  transform: translate(0px, -10px);
+  box-shadow: 0 20px 10px rgba(0,0,0,0.3);
+  cursor: pointer;
+} 
+
+.cardView >.card-body .card-title{
+  padding-right: 28px;
+  background: url(./assets/img/ar.png) no-repeat right 50%;
+  font-size: 21px;
+  font-weight: 800;
+  line-height: 1.52;
+}
+.cardView>.card-body .card-text{
+  margin-top: 7px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+
+
+.noticeWrap{
+  padding-top: 160px;
+  padding-bottom: 160px;
+  background-color: #f7f8f9;
+}
+
+.noticeWrap h2{
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 1.41;
+  letter-spacing: -2px;
+  text-indent: -2px;
+}
+
+.foot .row:first-child h2{
+  text-indent: -9999px;
+  overflow: hidden;
+  background:url(./assets/img/logo_w.png) no-repeat 0 0;
+  background-size: 165px auto;
+  cursor: pointer;
+}
+
+.foot .row:first-child{
+  color: hsla(0,0%,88.2%,.5);
+  font-size: 11px;
+  line-height: 20px;
+}
+.foot .row:first-child address{
+  margin-bottom:0px; 
+}
+
+.foot .row:last-child{
+  margin-top: 46px;
+  color: hsla(0,0%,88.2%,.7);
+  font-size: 12px;
+  line-height: 20px;
+}
+.foot .row:last-child ul{
+  padding-left: 0px;
+}
+.foot .row:last-child a{
+  display: inline-block;
+  color: inherit;
+  letter-spacing: -.6px;
+  text-decoration: none;
+}
+
+.foot .row:last-child div:last-child a{
+    width: 20px;
+    height: 20px;
+}
+.foot .row:last-child div:last-child a>svg{
+  width: inherit;
+  height: inherit;
 }
