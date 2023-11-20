@@ -5,7 +5,7 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from './components/NavBar.jsx'
-import Slide_Swiper from './components/SwiperView.jsx';
+import SlideSwiper from './components/SwiperView.jsx';
 import VisualView from './components/VisualView.jsx';
 import IntersectView from './components/Intersect.jsx';
 import NoticeView from './components/Notice.jsx';
@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="App">
       <NavBar/>
-      <Slide_Swiper/>
+      <SlideSwiper/>
       <VisualView/>
       <IntersectView/>
       <NoticeView/>
