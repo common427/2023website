@@ -1,6 +1,6 @@
 import { Container, Row, Col} from 'react-bootstrap';
 
-import { FaGithub , FaFacebook, FaYoutube ,FaInstagram} from "react-icons/fa";
+// import { FaGithub , FaFacebook, FaYoutube ,FaInstagram} from "react-icons/fa";
 
 import { PiFacebookLogoDuotone} from "react-icons/pi";
 import { PiYoutubeLogoDuotone} from "react-icons/pi";
