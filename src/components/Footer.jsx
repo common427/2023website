@@ -7,7 +7,7 @@ import { PiYoutubeLogoDuotone} from "react-icons/pi";
 import { PiInstagramLogoDuotone } from "react-icons/pi";
 
 
-function Footer(){
+function Footer(){  
     return (
         <div style={{background:"#171717", color:"white"}} className='py-5 foot' >
             <Container>
