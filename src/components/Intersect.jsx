@@ -3,7 +3,8 @@ import {vData} from '../data.js'
 import {Container, Row, Col, Card} from 'react-bootstrap';
 
 function GalleryList(){
-    const [myData,setMyData] = useState(vData)
+    //const [myData,setMyData] = useState(vData)
+    const [myData] = useState(vData)
     return(
         <Container className='mb-2 mb-mb-5'>
             <Row>
