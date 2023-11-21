@@ -3,8 +3,8 @@ import './style.scss';
 import {Routes, Route, NavLink} from 'react-router-dom'
 
 function App() {
-  // const [isActive, setIsActive] = useState(false)
-  
+  const [isActive, setIsActive] = useState(false)
+
   return (
       <div className="App">
         <nav className='header container'>
