@@ -1,9 +1,9 @@
 // import { useState } from 'react';
 import './style.scss';
-import {Routes, Route, NavLink} from 'react-router-dom'
+import {Routes, Route, Link ,NavLink} from 'react-router-dom'
 
 function App() {
-  const [isActive, setIsActive] = useState(false)
+  // const [isActive, setIsActive] = useState(false)
 
   return (
       <div className="App">
