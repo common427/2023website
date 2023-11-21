@@ -55,7 +55,8 @@ body{
   text-indent: -2px;
 }
 .visualWrap p{
-  padding-left: 624px;
+  /* padding-left: 624px;  */
+  padding-left: 60px;
   font-size: 18px;
   line-height: 1.56;
 }

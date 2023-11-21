@@ -7,8 +7,8 @@ function GalleryList(){
     //const [myData,setMyData] = useState(vData)
     const [myData] = useState(vData)
     return(
-        <Container className='mb-2 mb-mb-5'>
-            <Row>
+        <Container className='mb-2 mb-md-5'>
+            <Row className="gap-4">
                 {
                     myData.map(function(item,i){
                         return <CardView product={myData[i]}/>

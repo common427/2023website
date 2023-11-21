@@ -1,0 +1,59 @@
+$primary:#00ff00;
+*{margin: 0; padding: 0; box-sizing: border-box;}
+ul, li{list-style: none;}
+a:link, a:visited{text-decoration: none; color: #333;}
+
+// <Route path='/company' element={<div className='container h200 bg com'>회사소개페이지입니다.</div>}></Route>
+//<Route path='/community' element={<div className='container h200 bg comm'>소통의 공간입니다</div>}></Route>
+.container{
+    width: 1220px; 
+    margin:0 auto; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    // &.bg : and bg
+    &.bg{
+        background: skyblue;
+        border-radius: 10px;
+        background-size: cover;
+        background-position: center;
+        &.com{
+            background-color: darkblue;
+            color: white;
+        }
+        &.comm{
+            background-color: gold;
+        }
+    }
+    
+}
+
+// <nav className='header container'>
+//           <h1 className='logo'>COM</h1>
+//           <ul className='menu'>
+//             <li><NavLink to="/">home</NavLink></li>  
+//             <li><NavLink to="/company">company</NavLink></li>
+//             <li><NavLink to="/product">product</NavLink></li>
+//             <li><NavLink to="/community">community</NavLink></li>
+//           </ul>
+// </nav> 
+.header{
+    display: flex;
+    .menu{
+        display: flex;
+        margin: auto;
+        li{     
+            a{
+                display: block;
+                padding: 10px 15px;
+            }
+            a.active{
+                background: pink;
+            }
+        }
+    }
+}
+
+.primary{background:$primary;}
+.h100{height: 100px !important;}
+.h200{height: 200px !important;}
