@@ -1,30 +1,27 @@
+// import logo from './logo.svg';
+
 // import { useState } from 'react';
-import './style.scss';
-import {Routes, Route, Link ,NavLink} from 'react-router-dom'
+
+import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import NavBar from './components/NavBar.jsx'
+import SlideSwiper from './components/SwiperView.jsx';
+import VisualView from './components/VisualView.jsx';
+import IntersectView from './components/Intersect.jsx';
+import NoticeView from './components/Notice.jsx';
+import FooterView from './components/Footer.jsx';
 
 function App() {
-  // const [isActive, setIsActive] = useState(false)
-
   return (
-      <div className="App">
-        <nav className='header container'>
-          <h1 className='logo'>COM</h1>
-          <ul className='menu'>
-            {/* NavLink: class='active' */}
-            <li><NavLink to="/">home</NavLink></li>  
-            <li><NavLink to="/company">company</NavLink></li>
-            <li><NavLink to="/product">product</NavLink></li>
-            <li><NavLink to="/community">community</NavLink></li>
-          </ul>
-        </nav> 
-        <Routes>
-          <Route path='/' element={<div className='container h100 primary'>메인페이지</div>}></Route>
-          {/* <Route path='/company' element={<div className='container h100 bg com' style={{backgroundImage:""}}>회사소개페이지입니다.</div>}></Route> */}
-          <Route path='/company' element={<div className='container h200 bg com'>회사소개페이지입니다.</div>}></Route>
-          <Route path='/product' element={<div className='container h200 bg pro'>제품소개페이지입니다.</div>}></Route>
-          <Route path='/community' element={<div className='container h200 bg comm'>소통의 공간입니다</div>}></Route>
-        </Routes>
-      </div>
+    <div className="App">
+      <NavBar/>
+      <SlideSwiper/>
+      <VisualView/>
+      <IntersectView/>
+      <NoticeView/>
+      <FooterView/>
+    
+    </div>
   );
 }
 
