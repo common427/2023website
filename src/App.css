@@ -46,7 +46,9 @@ body{
   align-items: center;
 }
 
-
+.visualWrap{
+  width: 100%;
+} 
 .visualWrap h2{
   font-size: 44px;
   font-weight: 700;
@@ -56,10 +58,10 @@ body{
 }
 .visualWrap p{
   /* padding-left: 624px; */
-  padding-left: 60px; 
+  /* padding-left: 60px;  */
   font-size: 18px;
   line-height: 1.56;
- 
+  width: 500px;
 }
 
 .card{
